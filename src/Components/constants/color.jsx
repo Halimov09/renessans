@@ -1,4 +1,6 @@
 export const colors = {
-	primary: '#fcfaf5',
-	secondary: 'oklch(0.51 0.26 276.94)',
+	textwhite: '#FFFFFF',
+	secondary: 'rgb(110 44 243)',
+	bluegreen: "rgb(13 109 251)",
+
 }
