@@ -22,3 +22,9 @@
   .white{
     color: white !important;
   }
+
+  @media (max-width: 600px) {
+    .map{
+      padding: 24px !important;
+    }
+  }

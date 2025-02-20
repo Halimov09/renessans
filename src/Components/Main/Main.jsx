@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { Ariza, Footer, Kurs, Logo } from '..'
+import { Ariza, Footer, Kurs, Logo, Map } from '..'
 
 const navigation = [
   { name: 'Biz Haqimizda ', href: '#' },
@@ -144,6 +144,7 @@ const Main =() => {
       </div>
       <Kurs/>
       <Ariza/>
+      <Map/>
       <Footer/>
     </div>
   )
