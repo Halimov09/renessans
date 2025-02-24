@@ -1,20 +1,21 @@
+import { data } from "react-router-dom"
+import  logom  from "../Img/photo_2024-12-02_11-51-55.jpg"
+
 const posts = [
     {
       id: 1,
-      title: 'Boost your conversion rate',
+      title: 'Frontend REACT js course',
       href: '#',
       description:
-        'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-      date: 'Mar 16, 2020',
-      datetime: '2020-03-16',
-      category: { title: 'Marketing', href: '#' },
+        'Front-end developer with 6 months of experience in HTML, CSS, Tailwind CSS, JavaScript, React, and Bootstrap. Currently learning .NET and C# while working on various personal projects. Experienced in content management and web design, having participated in the development of the elde.uz website from scratch. Passionate about problem-solving and debugging code.',
+      date: 'Nov 16, 2021',
+      datetime: Date,
+      category: { title: 'Developer', href: '#' },
       author: {
-        name: 'Michael Foster',
-        role: 'Co-Founder / CTO',
+        name: 'Halimov Sunnatullokh',
+        role: 'Frontend mentor and Frontend engineer',
         href: '#',
-        imageUrl:
-          'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-      },
+        imageUrl: logom },
     },
     {
         id: 1,

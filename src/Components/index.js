@@ -7,3 +7,4 @@ export {default as Map} from "./Map/Map";
 export {default as submitForm} from "./Service/Service";
 export {default as Logo} from "./Img/logo_background2.png";
 export {default as Logo2} from "./Img/logo-background.png";
+export {default as Logomy} from "./Img/photo_2024-12-02_11-51-55.jpg";
