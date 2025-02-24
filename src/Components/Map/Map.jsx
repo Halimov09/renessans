@@ -12,7 +12,7 @@ const customIcon = new L.Icon({
 
 function MyMap() {
   return (
-    <div style={{ padding: "50px" }} className='map'>
+    <div style={{ padding: "50px" }} className='map' id='harita'>
         <MapContainer center={[40.761429, 72.350773]} zoom={15} style={{ height: "500px", width: "100%", borderRadius: "20px" }}>
             <TileLayer url="https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}" />
             <Marker position={[40.761429, 72.350773]} icon={customIcon}>

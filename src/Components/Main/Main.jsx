@@ -9,6 +9,7 @@ const navigation = [
   { name: 'Biz Haqimizda ', href: '#' },
   { name: 'Kurslar', href: `#kurs` },
   { name: 'Ariza', href: '#Ariza' },
+  { name: 'Harita', href: '#harita' },
   { name: 'Ijtimoiy Tarmoqlar', href: '#footer' },
 ]
 
@@ -75,6 +76,7 @@ const Main =() => {
                     <a
                       key={item.name}
                       href={item.href}
+                      onClick={() => setMobileMenuOpen(false)}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
@@ -110,14 +112,24 @@ const Main =() => {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-5xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
             <h1 className="text-3xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
               3 - Renessans Uzbekistan Bilan Kelajagingizni Birga Quring
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat.
+              Renessans IT Academy – Kelajak Dasturchilari Uchun Mukammal Muhit!
+
+              Biz dasturlashga qiziqqan barcha uchun innovatsion ta’lim muhitini yaratamiz. Renessans IT Academy – bu nafaqat o‘quv markazi, balki o‘z maqsadiga intiluvchi dasturchilar uchun ilhomlantiruvchi maydon.
+              Renessans IT Academy bilan kelajagingizni bugundan boshlang! 🚀
+              <div className='textleft'>
+                <div className='textleft__text'>
+                ✅ Tushunarli va samarali o‘quv dasturlari
+              ✅ Coworking zonasi – o‘rganish va tajriba almashish uchun qulay joy
+              ✅ Bepul Wi-Fi va zamonaviy jihozlangan sinflar
+              ✅ Shahar markazida joylashgan qulay lokatsiya
+                </div>
+              </div>
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
