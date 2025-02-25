@@ -22,7 +22,7 @@ const posts = [
     },
     {
         id: 1,
-        title: 'Graphic Designer Course Mentor',
+        title: 'Graphic Designer Course',
         href: '#',
         description:
           'A graphic designer with three years of experience, specializing in creative and impactful designs. I have worked on 100+ projects and currently teach at 3-Renessans Education Center, helping future designers master their craft.',
@@ -31,7 +31,7 @@ const posts = [
         category: { title: 'Designer', href: '#' },
         author: {
           name: 'Umaraliyev Asadbek',
-          role: 'Co-Founder / CTO',
+          role: 'Graphic Designer And Mentor',
           href: '#',
           imageUrl: imgDesign},
       },
