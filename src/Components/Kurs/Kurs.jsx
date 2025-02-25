@@ -1,5 +1,8 @@
 import { data } from "react-router-dom"
 import  logom  from "../Img/photo_2024-12-02_11-51-55.jpg"
+import imgDesign from "../Img/1_optimized_50.png"
+import imgfound from "../Img/photo_2025-02-25_11-46-14.jpg"
+import imgpriv from "../Img/private.jpg"
 
 const posts = [
     {
@@ -7,8 +10,8 @@ const posts = [
       title: 'Frontend REACT js course',
       href: '#',
       description:
-        'Front-end developer with 6 months of experience in HTML, CSS, Tailwind CSS, JavaScript, React, and Bootstrap. Currently learning .NET and C# while working on various personal projects. Experienced in content management and web design, having participated in the development of the elde.uz website from scratch. Passionate about problem-solving and debugging code.',
-      date: 'Nov 16, 2021',
+        'Front-end developer with 2 years of experience in HTML, CSS, Tailwind CSS, JavaScript, React, and Bootstrap. Currently learning .NET and C# while working on various personal projects. Experienced in content management and web design, having participated in the development of the elde.uz website from scratch. Passionate about problem-solving and debugging code.',
+      date: 'Nov 7, 2022',
       datetime: Date,
       category: { title: 'Developer', href: '#' },
       author: {
@@ -19,20 +22,18 @@ const posts = [
     },
     {
         id: 1,
-        title: 'Boost your conversion rate',
+        title: 'Graphic Designer Course Mentor',
         href: '#',
         description:
-          'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-        date: 'Mar 16, 2020',
+          'A graphic designer with three years of experience, specializing in creative and impactful designs. I have worked on 100+ projects and currently teach at 3-Renessans Education Center, helping future designers master their craft.',
+        date: 'Mar 16, 2022',
         datetime: '2020-03-16',
-        category: { title: 'Marketing', href: '#' },
+        category: { title: 'Designer', href: '#' },
         author: {
-          name: 'Michael Foster',
+          name: 'Umaraliyev Asadbek',
           role: 'Co-Founder / CTO',
           href: '#',
-          imageUrl:
-            'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        },
+          imageUrl: imgDesign},
       },
       {
         id: 1,
@@ -47,9 +48,7 @@ const posts = [
           name: 'Michael Foster',
           role: 'Co-Founder / CTO',
           href: '#',
-          imageUrl:
-            'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        },
+          imageUrl: imgfound},
       },
       {
         id: 1,
@@ -64,9 +63,7 @@ const posts = [
           name: 'Michael Foster',
           role: 'Co-Founder / CTO',
           href: '#',
-          imageUrl:
-            'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        },
+          imageUrl: imgpriv},
       },
   ]
   
@@ -75,7 +72,7 @@ const Kurs = () => {
       <div className="bg-white py-24 sm:py-32" id="kurs"> 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">From the blog</h2>
+            <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Kurslar va Mentorlar</h2>
             <p className="mt-2 text-lg/8 text-gray-600">Learn how to grow your business with our expert advice.</p>
           </div>
           <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -102,7 +99,7 @@ const Kurs = () => {
                   <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">{post.description}</p>
                 </div>
                 <div className="relative mt-8 flex items-center gap-x-4">
-                  <img alt="" src={post.author.imageUrl} className="size-10 rounded-full bg-gray-50" />
+                  <img alt="mentor" src={post.author.imageUrl} className="size-10 rounded-full bg-gray-50" />
                   <div className="text-sm/6">
                     <p className="font-semibold text-gray-900">
                       <a href={post.author.href}>
