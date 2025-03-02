@@ -2,7 +2,7 @@ const submitForm = async (formData) => {
     try {
         console.log("📤 Yuborilayotgan ma'lumot:", formData); // Konsolga yuborilayotgan ma'lumotni chiqarish
 
-        const response = await fetch("https://74.48.48.186:5000/api/users", {
+        const response = await fetch("http://74.48.48.186:5000/api/users", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData),
