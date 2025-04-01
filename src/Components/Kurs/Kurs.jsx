@@ -1,14 +1,13 @@
 import { data } from "react-router-dom"
 import  logom  from "../Img/photo_2024-12-02_11-51-55.jpg"
 import imgDesign from "../Img/1_optimized_50.png"
-import imgfound from "../Img/photo_2025-02-25_11-46-14.jpg"
-import imgpriv from "../Img/private.jpg"
+import  python  from "../Img/photo_2025-04-01_13-16-16.jpg"
 
 const posts = [
     {
       id: 1,
       title: 'Frontend REACT js course',
-      href: '#',
+      href: 'https://en.wikipedia.org/wiki/React_(software)',
       description:
         'Front-end developer with 2 years of experience in HTML, CSS, Tailwind CSS, JavaScript, React, and Bootstrap. Currently learning .NET and C# while working on various personal projects. Experienced in content management and web design, having participated in the development of the elde.uz website from scratch. Passionate about problem-solving and debugging code.',
       date: 'Nov 7, 2022',
@@ -17,13 +16,13 @@ const posts = [
       author: {
         name: 'Halimov Sunnatullokh',
         role: 'Frontend mentor and Frontend engineer',
-        href: '#',
+        href: 'https://en.wikipedia.org/wiki/React_(software)',
         imageUrl: logom },
     },
     {
         id: 1,
         title: 'Graphic Designer Course',
-        href: '#',
+        href: 'https://www.interaction-design.org/literature/topics/graphic-design',
         description:
           'A graphic designer with three years of experience, specializing in creative and impactful designs. I have worked on 100+ projects and currently teach at 3-Renessans Education Center, helping future designers master their craft.',
         date: 'Mar 16, 2022',
@@ -32,8 +31,23 @@ const posts = [
         author: {
           name: 'Umaraliyev Asadbek',
           role: 'Graphic Designer And Mentor',
-          href: '#',
+          href: 'https://www.interaction-design.org/literature/topics/graphic-design',
           imageUrl: imgDesign},
+      },
+      {
+        id: 1,
+        title: 'Backend Python Course',
+        href: 'https://www.python.org/',
+        description:
+          'With 3 years of experience and over 100 students trained, I specialize in Django, FastAPI, Node.js, SQL, and more. Ive built 10+ real-world projects and now Im here to teach you how to create scalable, efficient backend systems. Join me for hands-on, practical training that prepares you for the tech industrys challenges!',
+        date: 'Mar 16, 2020',
+        datetime: '2020-03-16',
+        category: { title: 'Backend', href: '#' },
+        author: {
+          name: 'Baratov Muslimbek',
+          role: 'Backend Developer Mentor',
+          href: 'https://www.python.org/',
+          imageUrl: python},
       },
   ]
   
