@@ -35,7 +35,7 @@ const Example = () => {
 
       <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
         <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-        <div className="isolate rounded  position: relative  bg-white px-6 py-24 sm:py-32 lg:px-8" id='Ariza'>
+        <div className="isolate rounded w-full position: relative  bg-white px-6 py-24 sm:py-32 lg:px-8" id='Ariza'>
         <button
                 type="button"
                 onClick={() => setOpen(false)}
