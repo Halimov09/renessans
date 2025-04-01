@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { Ariza, Footer, Kurs, Logo, Map } from '..'
+import { Ariza, Example, Footer, Kurs, Logo, Map } from '..'
 
 const navigation = [
   { name: 'Biz Haqimizda ', href: '#' },
@@ -18,6 +18,7 @@ const Main =() => {
 
   return (
     <div className="bg-white">
+      <Example/>
       <header className="absolute inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">

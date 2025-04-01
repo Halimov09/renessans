@@ -19,7 +19,7 @@ const submitForm = async (formData) => {
         const responseData = await response.json(); // Javobni JSON formatda olish
         console.log("✅ Serverdan kelgan javob:", responseData); // Konsolga serverdan kelgan javobni chiqarish
 
-        return { status: "pass", message: "Form submitted successfully!", data: responseData };
+        return { status: "pass", message: "Siz malumotlarni yubordingiz!", data: responseData };
     } catch (error) {
         console.error("🚨 Xatolik:", error.message); // Xatoni konsolga chiqarish
         return { status: "fail", message: error.message };

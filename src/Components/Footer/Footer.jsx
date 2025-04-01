@@ -15,16 +15,16 @@ const Footer = () => {
             </a>
             <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                 <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">Instagram</a>
+                    <a href="https://www.instagram.com/3renessans_uzbekistan" class="hover:underline me-4 md:me-6">Instagram</a>
                 </li>
                 <li>
-                    <a href="#" class="hover:underline me-4 md:me-6">Telegram</a>
+                    <a href="https://t.me/Renessans_Uzbekistan_3" class="hover:underline me-4 md:me-6">Telegram</a>
                 </li>
                 <li>
                     <a href="#" class="hover:underline me-4 md:me-6">Litsenziya</a>
                 </li>
                 <li>
-                    <a href="#" class="hover:underline">Raqam</a>
+                    <a href="tel:+998935930177" class="hover:underline">Raqam</a>
                 </li>
             </ul>
         </div>

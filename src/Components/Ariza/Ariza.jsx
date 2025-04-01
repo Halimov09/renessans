@@ -29,30 +29,36 @@ const Ariza = () => {
         <h2 className="text-4xl font-semibold text-gray-900 sm:text-5xl">Ariza Yuborish</h2>
       </div>
       <form onSubmit={handleSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20">
-        <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-6 ">
           <input 
             type="text" 
             name="Name" 
             placeholder="Ismingiz" 
             value={formData.Name} 
+            required
             onChange={(e) => setFormData({...formData, Name: e.target.value})} 
-            className="block w-full rounded-md px-3.5 py-2 text-gray-900 outline-gray-300 focus:outline-indigo-600" 
+            className="block w-full rounded-md px-3.5 py-2 text-gray-900 outline-gray-300 border border-gray-300 focus:outline-indigo-600" 
           />
           <input 
             type="number" 
             name="Numbers" 
             placeholder="Raqamingiz" 
-            value={formData.Numbers} 
+            value={formData.Numbers}
+            minLength={9}
+            maxLength={13}
+            required 
             onChange={(e) => setFormData({...formData, Numbers: e.target.value})} 
-            className="block w-full rounded-md px-3.5 py-2 text-gray-900 outline-gray-300 focus:outline-indigo-600" 
+            className="block w-full rounded-md px-3.5 border border-gray-300 py-2 text-gray-900 outline-gray-300 focus:outline-indigo-600" 
           />
           <input 
             type="text" 
             name="Course" 
             placeholder="Qaysi kursga qiziqasiz" 
             value={formData.Course} 
+            required
+            maxLength={3}
             onChange={(e) => setFormData({...formData, Course: e.target.value})} 
-            className="block w-full rounded-md px-3.5 py-2 text-gray-900 outline-gray-300 focus:outline-indigo-600" 
+            className="block w-full rounded-md px-3.5 border border-gray-300 py-2 text-gray-900 outline-gray-300 focus:outline-indigo-600" 
           />
         </div>
         <div className="mt-10">
