@@ -1,31 +1,40 @@
+const BOT_TOKEN = "7845781687:AAFCT8XzM8ZhKQkZJT2pKbtUERvuKn2VETc";
+const CHAT_ID = "-1002406594366"; 
+
 const submitForm = async (formData) => {
     try {
-        console.log("📤 Yuborilayotgan ma'lumot:", formData); // Konsolga yuborilayotgan ma'lumotni chiqarish
+        console.log("📤 Yuborilayotgan ma'lumot:", formData);
 
-        const response = await fetch("https://74.48.48.186:5001/api/users", {
+        const message = `
+📥 Yangi Ariza:
+👤 Ism: ${formData.Name}
+📞 Raqam: ${formData.Numbers}
+📚 Kurs: ${formData.Course}
+        `;
+
+        const response = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(formData),
+            body: JSON.stringify({
+                chat_id: CHAT_ID,
+                text: message,
+                parse_mode: "HTML"
+            })
         });
 
-        console.log("📥 Server javobi:", response); // Server javobini konsolga chiqarish
+        const data = await response.json();
 
-        if (!response.ok) {
-            const errorText = await response.text();
-            console.error(`❌ Server xatosi: ${response.status} - ${errorText}`);
-            throw new Error(`Server error: ${response.status} - ${errorText}`);
+        if (!data.ok) {
+            throw new Error(`Telegram API error: ${data.description}`);
         }
 
-        const responseData = await response.json(); // Javobni JSON formatda olish
-        console.log("✅ Serverdan kelgan javob:", responseData); // Konsolga serverdan kelgan javobni chiqarish
+        console.log("✅ Telegramga yuborildi:", data);
+        return { status: "pass", message: "Ariza muvaffaqiyatli yuborildi!" };
 
-        return { status: "pass", message: "Siz malumotlarni yubordingiz!", data: responseData };
     } catch (error) {
-        console.error("🚨 Xatolik:", error.message); // Xatoni konsolga chiqarish
-        return { status: "fail", message: error.message };
+        console.error("🚨 Xatolik:", error.message);
+        return { status: "fail", message: "Xatolik yuz berdi: " + error.message };
     }
 };
 
-// ✅ **To‘g‘ri eksport qilish**
 export default submitForm;
-
