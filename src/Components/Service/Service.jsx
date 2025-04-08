@@ -1,4 +1,4 @@
-const BOT_TOKEN = "7845781687:AAFCT8XzM8ZhKQkZJT2pKbtUERvuKn2VETc";
+
 const CHAT_ID = "-1002406594366"; 
 
 const submitForm = async (formData) => {
