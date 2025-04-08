@@ -4,7 +4,6 @@ const CHAT_ID = "-1002406594366";
 const submitForm = async (formData) => {
     try {
         console.log("📤 Yuborilayotgan ma'lumot:", formData);
-
         const message = `
 📥 Yangi Ariza:
 👤 Ism: ${formData.Name}
