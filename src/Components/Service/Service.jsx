@@ -28,7 +28,7 @@ const submitForm = async (formData) => {
             throw new Error(`Telegram API error: ${data.description}`);
         }
 
-        return { status: "pass", message: "Ariza muvaffaqiyatli yuborildi!" };
+        return { status: "pass", message: "Ariza muvaffaqiyatli yuborildi! " };
 
     } catch (error) {
         return { status: "fail", message: "Xatolik yuz berdi: " + error.message };
